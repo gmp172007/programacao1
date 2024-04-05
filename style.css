@@ -13,7 +13,7 @@
     font-family: 'Chakra Petch', sans-serif;
     }
     
-    
+
     .conteudo-principal {
     display: flex;
     flex-direction: column;
@@ -24,17 +24,7 @@
     margin: 0 auto;
     }
     
-    
-    .conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    }
-    
+ 
     .titulo-principal {
     text-align: left;
     width: 100%;
@@ -43,52 +33,9 @@
     
     .titulo-principal span {
     color: var(--verde);
-    }:root {
-        --cor-de-fundo: #1E1E1E;
-        --verde: #6FFF57;
-        --branco: #FFFFFF;
-        --botao-ativo: #3A375E;
-        --botao-inativo: rgba(58, 55, 94, 0.5);
-        --texto-fundo: rgba(58, 55, 94, 0.3);
         }
         
-        body {
-        background-color: var(--cor-de-fundo);
-        color: var(--branco);
-        font-family: 'Chakra Petch', sans-serif;
-        }
-        
-        .conteudo-principal {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 1200px;
-        width: 100%;
-        margin: 0 auto;
-        }
-        
-        
-        .conteudo-principal {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 1200px;
-        width: 100%;
-        margin: 0 auto;
-        }
-        
-        .titulo-principal {
-        text-align: left;
-        width: 100%;
-        font-size: 32px;
-        }
-        
-        .titulo-principal span {
-        color: var(--verde);
-        }
-        
+
         .botao {
         font-family: "Crakra Petch", sans-serif;
         background-color: var(--botao-inativo);
@@ -96,7 +43,6 @@
         display: flex;
         justify-content: center;
         padding: 1em;
-        
         font-size: 18px;
         align-items: center;
         width: 100%;
@@ -104,6 +50,17 @@
         border-left: 2px solid var(--botao-ativo);
         border-right: 2px solid var(--botao-ativo);
         border-top: none;
+        <h2 class="titulo-principal">Meus objetivos do ano<span>_</span></h2>
+<div class="botoes">
+<button class="botao ativo">Cursos na Alura</button>
+<button class="botao">Criar projetos em Jvascript</button>
+<button class="botao">Criar um portifolio</button>
+<button class="botao">Atualizar meu currículo</button>
+</div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
         }
         
         .botao:first-child{
