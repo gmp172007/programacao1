@@ -1,10 +1,10 @@
 :root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --cor-de-fundo: #ffffff;
+    --verde: #002fff;
+    --branco: #000000;
+    --botao-ativo: #857dd8;
+    --botao-inativo: rgba(21, 0, 255, 0.397);
+    --texto-fundo: rgba(21, 0, 255, 0.3);
     }
     
     body {
@@ -13,7 +13,7 @@
     font-family: 'Chakra Petch', sans-serif;
     }
     
-
+    
     .conteudo-principal {
     display: flex;
     flex-direction: column;
@@ -24,7 +24,6 @@
     margin: 0 auto;
     }
     
- 
     .titulo-principal {
     text-align: left;
     width: 100%;
@@ -33,59 +32,96 @@
     
     .titulo-principal span {
     color: var(--verde);
-        }
-        
-
-        .botao {
-        font-family: "Crakra Petch", sans-serif;
-        background-color: var(--botao-inativo);
-        color: var(--branco);
-        display: flex;
-        justify-content: center;
-        padding: 1em;
-        font-size: 18px;
-        align-items: center;
-        width: 100%;
-        border-bottom: 4px solid var(--botao-ativo);
-        border-left: 2px solid var(--botao-ativo);
-        border-right: 2px solid var(--botao-ativo);
-        border-top: none;
-        <h2 class="titulo-principal">Meus objetivos do ano<span>_</span></h2>
-<div class="botoes">
-<button class="botao ativo">Cursos na Alura</button>
-<button class="botao">Criar projetos em Jvascript</button>
-<button class="botao">Criar um portifolio</button>
-<button class="botao">Atualizar meu currículo</button>
-</div>
-</section>
-<script src="main.js"></script>
-</body>
-</html>
-        }
-        
-        .botao:first-child{
-        border-radius: 40px 40px 0 0;
-        }
-        
-        .botoes {
-        display: block;
-        }
-        
-        
-        
-        .ativo{
-        background-color: var(--botao-ativo);
-        border-bottom: 4px solid var(--verde);
-        }
-        
-        @media screen and (min-width: 768px){
-        .botoes{
-        display: flex;
-        }
-        .botao:first-child{
-        border-radius: 40px 40px 0 0;
-        }
-        .botao:last-child{
-        border-radius: 0 40px 0 0;
-        }
-        }
+    }
+    
+    
+    .botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+    }
+    
+    .botao:first-child {
+    border-radius: 40px 40px 0 0;
+    }
+    
+    .botoes {
+    display: block;
+    }
+    
+    .botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+    }
+    
+    .abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+    }
+    .aba-conteudo.ativo{
+    display:block;
+    }
+    
+    .aba-conteudo{
+    display: none;
+    }
+    
+    .aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+    }
+    .aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+    }
+    
+    .contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    .contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+    }
+    
+    .contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+    
+    }
+    
+    .contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+    
+    }
+    
+    @media screen and (min-width: 768px) {
+    .botoes {
+    display: flex;
+    }
+    
+    .botao:first-child {
+    border-radius: 40px 0 0 0;
+    }
+    
+    .botao:last-child {
+    border-radius: 0 40px 0 0;
+    }
+    }
+    
